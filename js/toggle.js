@@ -4,8 +4,14 @@ function showSectionById(id) {
   document.getElementById(id).classList.remove("hidden");
 }
 
-document
-  .getElementById("donation-show-button")
+showSectionById("donation-section");
+
+document.getElementById("donation-show-button")
   .addEventListener("click", function () {
-    showSectionById("donation-show-button");
+    showSectionById("donation-section");
+  });
+
+document.getElementById("history-show-button")
+  .addEventListener("click", function () {
+    showSectionById("history-section");
   });
