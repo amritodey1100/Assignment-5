@@ -35,7 +35,7 @@ document
       const p = document.createElement("p");
       p.innerText = `Added: ${firstInputMoneyNumber} at ${firstThingName} on ${formattedDateTime} `;
       p.className =
-        "bg-white p-4 rounded-lg shadow-md mb-4 text-gray-800 text-center mb-[6900px] ";
+        "bg-white p-4 rounded-lg shadow-md mb-4 text-gray-800 text-center mb-[6900px] mt-[-500px]";
 
       document.getElementById("history-section").appendChild(p);
     }
@@ -69,6 +69,17 @@ document
       const mainBalanceNumber = mainBalance - secondInputMoneyNumber;
 
       document.getElementById("account-balance").innerText = mainBalanceNumber;
+      const firstThingName = document.getElementById("first-title").innerText;
+
+      const currentDateTime = new Date();
+      const formattedDateTime = currentDateTime.toLocaleString();
+
+      const p = document.createElement("p");
+      p.innerText = `Added: ${firstInputMoneyNumber} at ${firstThingName} on ${formattedDateTime} `;
+      p.className =
+        "bg-white p-4 rounded-lg shadow-md mb-4 text-gray-800 text-center mb-[6900px] mt-[-500px]";
+
+      document.getElementById("history-section").appendChild(p);
     }
   });
 
@@ -100,5 +111,16 @@ document
       const mainBalanceNumber = mainBalance - thirdInputMoneyNumber;
 
       document.getElementById("account-balance").innerText = mainBalanceNumber;
+      const firstThingName = document.getElementById("first-title").innerText;
+
+      const currentDateTime = new Date();
+      const formattedDateTime = currentDateTime.toLocaleString();
+
+      const p = document.createElement("p");
+      p.innerText = `Added: ${firstInputMoneyNumber} at ${firstThingName} on ${formattedDateTime} `;
+      p.className =
+        "bg-white p-4 rounded-lg shadow-md mb-4 text-gray-800 text-center mb-[6900px] mt-[-500px]";
+
+      document.getElementById("history-section").appendChild(p);
     }
   });
